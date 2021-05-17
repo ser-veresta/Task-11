@@ -1,0 +1,140 @@
+*{
+    font-size: 20px;
+}
+
+div{
+    width: 70%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.flex > div > label{
+    display: inline-block;
+    width: 35%;
+    font-weight: bold;
+}
+
+form{
+    width: 80%;
+    padding: 1px 5px 20px 5px;
+    background-color: wheat;
+    border-radius: 10px;
+
+}
+
+input[type='text']{
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+}
+
+span{
+    margin-right: 13%;
+}
+
+.inline-flex{
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: auto;
+    height: 30px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.inline-flex > div {
+    width: auto;
+    padding-right: 6px;
+}
+
+.warning{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    opacity: 0.6;
+}
+
+.button{
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 50%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+}
+
+table,tr,td,th{
+    border: 2px solid grey;
+    padding: 15px;
+}
+
+table{
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#table > tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+#table > tr > th {
+    background-color: wheat;
+}
+
+
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 15px;
+    }
+
+    form{
+        width: 145%;
+    }
+
+    .flex > div > label{
+        width: 30%;
+    }
+
+    input[type = 'text']{
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    div{
+        width: 80%;
+    }
+
+    .inline-flex{
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    .warning{
+        display: inline-block;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    table{
+        overflow-x: scroll;
+        width: 100px;
+    }
+}
